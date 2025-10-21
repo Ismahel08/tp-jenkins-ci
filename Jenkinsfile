@@ -1,6 +1,7 @@
 pipeline {
     agent any
     options {
+        docker { image 'python:3.11-slim' }
         // Arrête vite si ça coince, limite la verbosité
         // ansiColor('xterm')  // Commentée car peut causer une erreur
         timestamps()
