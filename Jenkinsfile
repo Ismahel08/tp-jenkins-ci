@@ -2,8 +2,8 @@ pipeline {
  agent any
  options {
  // Arrête vite si ça coince, limite la verbosité
- ansiColor('xterm')
- timestamps()
+  ansiColor('xterm')
+  timestamps()
  }
  stages {
  stage('Checkout') {
